@@ -16,23 +16,28 @@ class Report
 
   # レポートの出力手順を規定
   def output_report
-    output_header
-    output_body
-    output_footer
+    result_list = [
+      output_header,
+      output_body,
+      output_footer
+    ]
+    result = result_list.join
   end
 
   private
+  def output_line(line)
+    raise 'Called abstract method !!'
+  end
+
   def output_header
   end
 
   def output_body
+    body_text = ''
     @body.each_line do |line|
-      output_line(line)
+      body_text << output_line(line)
     end
-  end
-
-  def output_line(line)
-    raise 'Called abstract method !!'
+    body_text
   end
 
   def output_footer

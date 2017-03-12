@@ -9,9 +9,9 @@ thanks.
 EOS
 
 html = HTMLReport.new(title, body)
-html.output_report
+puts html.output_report
 
-puts '---'
+puts '-----------'
 
 plain = PlainTextReport.new(title, body)
-plain.output_report
+puts plain.output_report

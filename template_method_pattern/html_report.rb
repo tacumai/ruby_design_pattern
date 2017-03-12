@@ -6,15 +6,15 @@ class HTMLReport < Report
 
   private
   def output_header
-    puts "<html><head><title>#{@title}</title></head><body>"
+    "<html><head><title>#{@title}</title></head><body>\n"
   end
 
   def output_line(line)
-    puts "<p>#{line}</p>"
+    "<p>#{line.chomp}</p>\n"
   end
 
   # レポートの末尾に出力
   def output_footer
-    puts '</body></html>'
+    '</body></html>'
   end
 end

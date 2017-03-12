@@ -6,10 +6,10 @@ class PlainTextReport < Report
 
   private
   def output_header
-    puts "**** #{@title} ****"
+    "**** #{@title} ****\n"
   end
 
   def output_line(line)
-    puts line
+    "#{line}"
   end
 end
