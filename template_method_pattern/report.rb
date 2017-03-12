@@ -9,9 +9,9 @@
 
 # レポートを出力する
 class Report
-  def initialize
-    @title = "html report title"
-    @text = ["report line 1", "report line 2", "report line 3"]
+  def initialize(title, body)
+    @title = title
+    @body = body
   end
 
   # レポートの出力手順を規定
@@ -26,7 +26,7 @@ class Report
   end
 
   def output_body
-    @text.each do |line|
+    @body.each_line do |line|
       output_line(line)
     end
   end
