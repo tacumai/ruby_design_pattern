@@ -7,14 +7,12 @@
 # - 出力形式を決めること
 #
 
-# レポートを出力する
 class Report
   def initialize(title, body)
     @title = title
     @body = body
   end
 
-  # レポートの出力手順を規定
   def output_report
     result_list = [
       output_header,

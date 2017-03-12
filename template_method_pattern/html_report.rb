@@ -13,7 +13,6 @@ class HTMLReport < Report
     "<p>#{line.chomp}</p>\n"
   end
 
-  # レポートの末尾に出力
   def output_footer
     '</body></html>'
   end
