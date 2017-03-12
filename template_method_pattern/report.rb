@@ -21,6 +21,7 @@ class Report
     output_footer
   end
 
+  private
   def output_header
   end
 

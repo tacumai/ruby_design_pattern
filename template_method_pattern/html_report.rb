@@ -3,6 +3,8 @@
 
 require './report'
 class HTMLReport < Report
+
+  private
   def output_header
     puts "<html><head><title>#{@title}</title></head><body>"
   end

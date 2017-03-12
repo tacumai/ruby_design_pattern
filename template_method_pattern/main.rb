@@ -4,8 +4,7 @@ require './report'
 
 html = HTMLReport.new
 html.output_report
-
-p '-----------------'
+puts '-----------------'
 
 plain = PlainTextReport.new
 plain.output_report

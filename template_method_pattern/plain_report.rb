@@ -3,6 +3,8 @@
 
 require './report'
 class PlainTextReport < Report
+
+  private
   def output_header
     puts "**** #{@title} ****"
   end
