@@ -1,18 +1,18 @@
+# このクラスの役割
+# - HTML形式のコンテンツを作り、出力すること
+
 require './report'
-# HTML形式でのレポート出力を行う
 class HTMLReport < Report
-  # レポートの先頭に出力
-  def output_start
+  def output_header
     puts "<html><head><title>#{@title}</title></head><body>"
   end
 
-  # 本文内のLINE出力部分
   def output_line(line)
     puts "<p>#{line}</p>"
   end
 
   # レポートの末尾に出力
-  def output_end
+  def output_footer
     puts '</body></html>'
   end
 end

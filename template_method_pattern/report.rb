@@ -1,3 +1,12 @@
+# このクラスの役割
+# - 共通する振る舞いを定義すること
+#   - イニシャライザ
+#   - レポートを出力
+#
+# このクラスでやらないこと
+# - 出力形式を決めること
+#
+
 # レポートを出力する
 class Report
   def initialize
@@ -7,29 +16,24 @@ class Report
 
   # レポートの出力手順を規定
   def output_report
-    output_start
+    output_header
     output_body
-    output_end
+    output_footer
   end
 
-  # レポートの先頭に出力
-  def output_start
+  def output_header
   end
 
-  # レポートの本文の管理
   def output_body
     @text.each do |line|
       output_line(line)
     end
   end
 
-  # 本文内のLINE出力部分
-  # 今回は個別クラスに規定するメソッドとする。規定されてなければエラーを出す
   def output_line(line)
     raise 'Called abstract method !!'
   end
 
-  # レポートの末尾に出力
-  def output_end
+  def output_footer
   end
 end
