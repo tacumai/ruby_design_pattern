@@ -1,5 +1,5 @@
 # Template Method Pattern
-(テンプレートメソッド Ruby 2.0.0 デザインパターン速攻習得[template Method])[http://morizyun.github.io/blog/ruby-design-pattern-01-template-engine/]を参考に、自分なりにTemplate Method Pattern をまとめたものになります。
+(テンプレートメソッド Ruby 2.0.0 デザインパターン速攻習得[template Method])[http://morizyun.github.io/blog/ruby-design-pattern-01-template-engine/] を参考に、自分なりにTemplate Method Pattern をまとめたものになります。
 
 ## 構成
 - 抽象クラス：　変化しにくい不変な振る舞いや処理を定義する
